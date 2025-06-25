@@ -160,7 +160,7 @@ namespace AchievementsHelper.ViewModel
             }
             catch (Exception ex)
             {
-                throw new Exception($"GET request failed for URL: ", ex);
+                throw new Exception($"GET request failed for URL: {ex.Message}", ex);
             }
         }
     }
