@@ -103,7 +103,7 @@ namespace AchievementsHelper.ViewModel
             try
             {
                 var result = JsonSerializer.Deserialize<SteamGamesResponse>(responseJson);
-                return result?.Response?.Games ?? new List<Game>();
+                return result?.Response?.Games.OrderBy(g => g.Name).ToList() ?? new List<Game>();
             }
             catch (JsonException ex)
             {

@@ -68,7 +68,7 @@
                                     Binding="{Binding Description}"
                                     Width="2*" />
                 <DataGridCheckBoxColumn Header="Odblokowane"
-                                        Binding="{Binding Unlocked}"
+                                        Binding="{Binding Achieved}"
                                         Width="Auto" />
             </DataGrid.Columns>
         </DataGrid>

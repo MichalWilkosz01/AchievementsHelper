@@ -3,9 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AchievementsHelper.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="AchievementsHelper" 
+        Width="1000"
+        Height="700"
+        MinWidth="1000"
+        MinHeight="700"
+         WindowStartupLocation="CenterScreen">
     <Grid Background="#1B2838">
         <ContentControl x:Name="MainContent" />
     </Grid>

@@ -9,8 +9,8 @@ namespace AchievementsHelper.Model
         public string Description { get; set; }
         [JsonPropertyName("name")]
         public string Name { get; set; }
-        [JsonPropertyName("achieved")]
         [JsonConverter(typeof(IntToBoolConverter))]
+        [JsonPropertyName("achieved")]
         public bool Achieved { get; set; }
     }
 }
