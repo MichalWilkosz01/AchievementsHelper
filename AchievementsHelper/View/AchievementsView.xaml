@@ -91,7 +91,7 @@
                                     Width="Auto" />
                 <DataGridTextColumn Header="Opis"
                                     Binding="{Binding Description}"
-                                    Width="2*" />
+                                    Width="Auto" />
                 <DataGridCheckBoxColumn Header="Odblokowane"
                                         Binding="{Binding Unlocked}"
                                         Width="Auto" />

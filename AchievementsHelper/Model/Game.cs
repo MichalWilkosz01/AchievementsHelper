@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace AchievementsHelper.Model
 {
     public class Game
     {
-        public string AppId { get; set; }        // ID gry w Steam (np. "570" dla Dota 2)
-        public string Name { get; set; }         // Nazwa gry
-        public string IconUrl { get; set; }      // URL do ikonki gry (np. do wyświetlenia w ComboBox)
+        [JsonPropertyName("appid")]
+        public int AppId { get; set; }
+
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
+
+        [JsonPropertyName("playtime_forever")]
+        public int PlaytimeForever { get; set; }
         public List<Achievement> Achievements { get; set; }
     }
 }

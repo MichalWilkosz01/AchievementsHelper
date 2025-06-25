@@ -1,9 +1,16 @@
-﻿namespace AchievementsHelper.Model
+﻿using AchievementsHelper.Helpers;
+using System.Text.Json.Serialization;
+
+namespace AchievementsHelper.Model
 {
     public class Achievement
     {
+        [JsonPropertyName("description")]
         public string Description { get; set; }
+        [JsonPropertyName("name")]
         public string Name { get; set; }
-        public bool Unlocked { get; set; }
+        [JsonPropertyName("achieved")]
+        [JsonConverter(typeof(IntToBoolConverter))]
+        public bool Achieved { get; set; }
     }
 }
